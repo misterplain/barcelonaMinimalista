@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter some text in the fields below, then press the "Submit form" button to submit the form.</p>
+
+<form id="myForm">
+  First name: <input type="text" name="fname" id="name"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit form">
+</form>
+
+<div id="comment">
+ <p>test one</p>
+</div>
+
+<script>
+
+// let name = document.querySelector("#name").textContent;
+
+function myFunction() {
+  let name = document.querySelector("#name");
+  const p = document.createElement("p");
+  const text = document.createTextNode(name.value);
+  p.appendChild(text);
+  const element = document.getElementById("comment");
+  element.appendChild(p);
+  for (i = 1; i < element.children.length; i++){
+        element.insertBefore(element.childNodes[i], element.firstChild);
+    }
+}
+
+</script>
+
+</body>
+</html>
