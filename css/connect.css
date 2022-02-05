@@ -1,0 +1,20 @@
+.form-group {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+    width:100%;
+
+}
+
+#nameInput, #nameInputOther, #nameInputTrade {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#commentInput, #commentInputTrade, #commentInputOther {
+    text-align: center;
+}
+
+#comment-other {
+    margin-left: 10px;
+}

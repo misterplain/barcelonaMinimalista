@@ -38,17 +38,28 @@ a:hover {
 .display-3 {
     text-align: center;
     padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: 300%;
+
 }
 
-.container-fluid {
-    margin: 0px 0px 0px 0px;
-    text-align: right;
+.display-4 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-size: 200%;
+
 }
+
 
 .img-fluid {
     width: 100%;
     height: 230px;
     object-fit: cover;
+}
+
+.carousel-caption-p {
+    margin-right: 15px;
 }
 
 .background-text {
@@ -63,7 +74,9 @@ a:hover {
 }
 
 .carousel-inner {
-    padding: 0px;
+    padding: 10px;
+    margin: 0;
+    border-top: 2px solid lightgreen;
 }
 
 .carousel-caption {
@@ -71,7 +84,7 @@ a:hover {
     left: 0;
     width: 100%;
     font-size:4vw;
-    padding-right: 0; */
+    padding-right: 0; 
 }
 
 .carousel-caption-p {
@@ -85,65 +98,16 @@ a:hover {
     font-size: calc(100% + 1vw + 1vh);
 }
 
-.snippet {
-    padding: 0;
-}
-
-.snippet-header {
-    font-size: 180%;
-}
-
-.snippet-body {
-    font-size: 130%;
-    padding: 0;
-}
-
-.snippet-row {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-bottom: 1px solid black;
-
-}
-
-/*collab*/
-
-#accordion {
-    width: 70%;
-    position: fixed;
-    left: 10%;
-    right: 10%;
-
-}
-
-/*reduce*/
-
-.cards-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-.card img {
-    max-width: 100%;
-    max-height: 100%;
+/*footer*/
+.fa {
+    color: green;
   }
 
-  .card {
-    margin: 0 0.5em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    border-radius: 0;
-  }
-  .carousel-inner {
-    padding: 1em;
+  .site-footer {
+    border-top: 1px solid green;
   }
 
-  .carousel-control-prev,
-  .carousel-control-next {
-  background-color: #e1e1e1;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
+  .footer-row {
+    padding-top: 10px;
+  }
 

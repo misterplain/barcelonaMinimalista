@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <!--MY STYLESHEET-->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/connect.css" />
     <title>bcnMinimalista</title>
 </head>
 <body>
 
     <header class="jumbotron jumbotron-fluid">
-        <div class="container container-fluid">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col float-right"></div>
                     <a href="home.html"><h1>barcelona minimalista</h1></a>
@@ -63,11 +64,125 @@
                 <p class="display-3">Connect with your Community</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="chat-tab" data-toggle="tab" data-target="#chat" type="button" role="tab" aria-controls="chat" aria-selected="true">Chat</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="trade-tab" data-toggle="tab" data-target="#trade" type="button" role="tab" aria-controls="trade" aria-selected="false">Trade</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="other-tab" data-toggle="tab" data-target="#other" type="button" role="tab" aria-controls="other" aria-selected="false">Other</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="chat" role="tabpanel" aria-labelledby="home-tab">
+                        <form id="myForm">
+                            <div class="mb-3">
+                                <div class="col-12 ">
+                                    <input class="form-control" type="text" name="fname" id="nameInput" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="col">
+                                    <textarea rows="4" cols="50" name="comment"  class="form-control" form="myForm" id="commentInput" placeholder="Enter comment here"></textarea>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="col">
+                                    <input type="button" class="form-control" onclick="myFunctionChat()" value="Submit form">
+                                </div>
+                            </div>
+                        </form>
+                        <div id="comment-chat">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="trade" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade show active" id="trade" role="tabpanel" aria-labelledby="home-tab">
+                            <form id="myForm">
+                                <div class="mb-3">
+                                    <div class="col-12 ">
+                                        <input type="text"  class="form-control" name="fname" id="nameInputTrade" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="col">
+                                        <textarea rows="4" cols="50" name="comment"  class="form-control" form="myForm" id="commentInputTrade" placeholder="Enter comment here"></textarea>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="col form-group">
+                                        <input type="button" class="form-control" onclick="myFunctionTrade()" value="Submit form">
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="comment-trade">
+                                <p></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade show active" id="other" role="tabpanel" aria-labelledby="home-tab">
+                            <form id="myForm">
+                                <div class="mb-3">
+                                    <div class="col-12 ">
+                                        <input type="text"  class="form-control" name="fname" id="nameInputOther" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="col">
+                                        <textarea rows="4" cols="50" name="comment"  class="form-control" form="myForm" id="commentInputOther" placeholder="Enter comment here"></textarea>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="col form-group">
+                                        <input type="button" class="form-control" onclick="myFunctionOther()" value="Submit form">
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="comment-other">
+                        <p></p>
+                    </div>
+                </div>
+            </div>    
+
+            </div>
+        </div>
     </div>
 
+    <footer  class="site-footer">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-3 text-center"> 
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram fa-3x"></i></a>
+                </div>
+                <div class="col-3 text-center"> 
+                  <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook fa-3x"></i></a>
+                </div>
+                <div class="col-3 text-center"> 
+                  <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-3x"></i></a>
+                </div>
+                <div class="col-3 text-center"> 
+                  <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-envelope fa-3x"></i></a>
+                </div>
+  
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-
+    <script src="js/script.js"></script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
