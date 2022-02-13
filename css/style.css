@@ -72,6 +72,7 @@ a:hover {
 .carousel-caption-p {
     font-family: 'Montserrat', sans-serif;
     margin-right: 15px;
+    font-weight: bold;
 }
 
 .background-text {
@@ -159,6 +160,21 @@ a:hover {
 
 #comment-other {
     margin-left: 10px;
+}
+
+#comment-chat .comment-head {
+    color: green;
+    font-weight: bold;
+}
+
+#comment-trade .comment-head {
+    color: green;
+    font-weight: bold;
+}
+
+#comment-other .comment-head {
+    color: green;
+    font-weight: bold;
 }
 /*end connect*/
 
@@ -252,9 +268,10 @@ transform: translateY(-50%);
 
   
   @media (max-width: 400px) {
-    .flex-grid {
-      display: block;
-    }
+        .text-only, .waste-title {
+            font-size: 90%;
+        }
+
   }
   
   .flex-grid-thirds {
@@ -295,7 +312,14 @@ transform: translateY(-50%);
     margin-top: auto;
     margin-bottom: auto;
     padding: 0;
+}
 
+.btn-inform {
+    padding: 3px;
+}
+
+.row .col-9 {
+    margin-right: 0;
 }
 
 

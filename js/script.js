@@ -3,7 +3,9 @@ function myFunctionChat() {
     let commentInput = document.querySelector("#commentInput")
     const newComment = document.createElement("div");
     const name = document.createElement("h3");
+    name.setAttribute("class", "comment-head");
     const body = document.createElement("p");
+    body.setAttribute("class", "comment-text");
     name.innerText= nameInput.value + ' says:';
     body.innerText= commentInput.value;
     newComment.appendChild(name);
@@ -25,7 +27,9 @@ function myFunctionTrade() {
     let commentInput = document.querySelector("#commentInputTrade")
     const newComment = document.createElement("div");
     const name = document.createElement("h3");
+    name.setAttribute("class", "comment-head");
     const body = document.createElement("p");
+    body.setAttribute("class", "comment-text");
     name.innerText= nameInput.value + ' says:';
     body.innerText= commentInput.value;
     newComment.appendChild(name);
@@ -47,7 +51,9 @@ function myFunctionTrade() {
         let commentInput = document.querySelector("#commentInputOther")
         const newComment = document.createElement("div");
         const name = document.createElement("h3");
+        name.setAttribute("class", "comment-head");
         const body = document.createElement("p");
+        body.setAttribute("class", "comment-text");
         name.innerText= nameInput.value + ' says:';
         body.innerText= commentInput.value;
         newComment.appendChild(name);
@@ -128,8 +134,8 @@ const kilometers = document.body.querySelector("#kilometers");
         //kilometers per week at 1.2 gal/km, FF per week at 5,250 avg year, meat per week 125 gal/serving, fly 24 per week if x amount of hours per year 
         total = total + (kilometers.value * 1.2) + (fastFashion.value * 100.96) + (meat.value * 125) + (fly.value * 24);
         $("#footprintModal").modal("show");
-        let monthly = total * 4
-        let yearly = total * 52
+        let monthly = Math.round(total * 4);
+        let yearly = Math.round(total * 52);
         let totalDisplay = "Your weekly water footprint is " + total + " gallons" 
         let monthlyDisplay = "Which is " + monthly + " over the course of a month"
         let yearlyDisplay = "And " + yearly + " over the course of a year"
