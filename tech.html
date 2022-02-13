@@ -57,48 +57,94 @@
  
 
     <!--HOME BODY CONTENT-->
-
     <div class="container">
         <div class="row">
-            <div class="col-9">
-                <p class="display-3">News in Local Waste Reduction</p>
-            </div>
-            <div class="col-3  col-btn">
-                <a type="button" class="btn btn-outline-secondary" id="suggestButton5">Make a Suggestion</a>
+            <div class="col">
+                <p class="display-3">Tools and Tech</p>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="row form-header">
+            <div class="col">
+                <p>Water footprint calculators can help take multiple ect ect </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form id="myForm">
+                    <div class="form-group">
+                      <label for="kilometers"></label>
+                      <input type="number" class="form-control" id="kilometers"  placeholder="Kilometers driven per week">
+                    </div>
+                    <div class="form-group">
+                      <label for="fastFashion"></label>
+                      <input type="number" class="form-control" id="fastFashion" placeholder="Fast fashion items purchased per year">
+                    </div>
+                    <div class="form-group">
+                        <label for="meat"></label>
+                        <input type="number" class="form-control" id="meat" placeholder="Servings of meat consumed per week">
+                    </div>
+                    <div class="form-group">
+                        <label for="fly"></label>
+                        <input type="number" class="form-control" id="fly" placeholder="Flight hours over a year">
+                    </div>
+                        <button type="button" class="btn btn-success" id="calculate">Check Footprint</button>
+                        <button type="button" class="btn btn-outline-dark" id="reset" value="Reset Data">Clear</button>
+                  </form>
+            </div>
+        </div>
+    </div>
 
-        </div>
-        <div class="row snippet-row">
-            <div class="col-4">
-                <img src="../img/green.jpg" class="img-fluid" alt="photo">
+    <div class="container"><hr>
+        <div class="row">
+            <div class="col-8">
+                
+                <p class="display-4">Innovative Tools</p>
             </div>
-            <div class="col snippet">
-                <a  href="https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/Barcelona%20green%20infrastructure%20and%20biodiversity%20plan%202020.pdf" target="_blank"><p class="snippet-header text-responsive">Barcelonas Green Initiative</p>
-                <p class="snippet-body text-responsive">Barcelona green infrastructure and biodiversity plan 2020</p></a>
-            </div>
-        </div>
-        <div class="row snippet-row">
-            <div class="col-4">
-                <!--https://ajuntament.barcelona.cat/superilles/es/-->
-                <img src="../img/superilla.jpg" class="img-fluid" alt="photo">
-            </div>
-            <div class="col snippet">
-                <a  href="https://ajuntament.barcelona.cat/superilles/es/" target="_blank"><p class="snippet-header text-responsive">Superillas</p>
-                <p class="snippet-body text-responsive">The Superblock programme is transformating the model for the entire city, with the aim of reclaiming for citizens part of the space currently occupied by private vehicles.</p></a>
+            <div class="col  col-btn">
+                <a type="button" class="btn btn-outline-secondary" id="suggestButton4">Make a Suggestion</a>
             </div>
         </div>
-        <div class="row snippet-row">
-            <div class="col-4">
-                <!--https://www.barcelona-metropolitan.com/living/community/how-to-recycle-in-barcelona/-->
-                <img src="../img/recycle.jpg" class="img-fluid" alt="photo">
-            </div>
-            <div class="col snippet">
-                <a  href="https://www.barcelona-metropolitan.com/living/community/how-to-recycle-in-barcelona/" target="_blank"><p class="snippet-header text-responsive">A Recyclers User guide</p>
-                <p class="snippet-body text-responsive">Best recycling practices and in depth coverage of how Barcelona recycles its waste</p></a>
+        <div class="row">
+            <div class="flex flex-row flex-wrap h-100">
+                <div class="flex flex-column flex-basis-50 bg-1">
+                    <p class="flex-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quo quis non beatae temporibus, voluptatem quasi sed animi excepturi debitis</p>
+                </div>
+                <div class="flex flex-column flex-basis-50 bg-2">
+                    <p class="flex-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quo quis non beatae temporibus, voluptatem quasi sed animi excepturi debitis</p>
+                </div>
+                <div class="flex flex-column flex-basis-50 bg-3">
+                    <p class="flex-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quo quis non beatae temporibus, voluptatem quasi sed animi excepturi debitis</p>
+                </div>
+                <div class="flex flex-column flex-basis-50 bg-4">
+                    <p class="flex-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quo quis non beatae temporibus, voluptatem quasi sed animi excepturi debitis</p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!--modal for water footprint-->
+    <div id="footprintModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Water Footprint</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="div">
+                                <p id="footprintText"></p>
+                                <p id="monthlyText"></p>
+                                <p id="yearlyText"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
     </div>
 
         <!--MODAL-->
@@ -155,6 +201,9 @@
             </div>
         </div>
 
+
+
+
     <footer  class="site-footer">
         <div class="container">
             <div class="row footer-row">
@@ -180,5 +229,6 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 </html>
