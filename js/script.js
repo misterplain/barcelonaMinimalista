@@ -16,6 +16,8 @@ function myFunctionChat() {
           element.insertBefore(element.childNodes[i], element.firstChild);
         }
     reverseOrder();
+    nameInput.value = ""
+    commentInput.value = ""
     }
 
 function myFunctionTrade() {
@@ -36,6 +38,8 @@ function myFunctionTrade() {
             element.insertBefore(element.childNodes[i], element.firstChild);
         }
     reverseOrder();
+    nameInput.value = ""
+    commentInput.value = ""
     }
 
     function myFunctionOther() {
@@ -56,6 +60,8 @@ function myFunctionTrade() {
                 element.insertBefore(element.childNodes[i], element.firstChild);
             }
         reverseOrder();
+        nameInput.value = ""
+        commentInput.value = ""
         }
 
 /*suggest button*/

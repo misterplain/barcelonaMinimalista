@@ -1,3 +1,6 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 .jumbotron-fluid {
     background-color: white;
     border-bottom: 2px solid black;
@@ -35,11 +38,28 @@ a:hover {
     padding: 0px;
 }
 
+.display-3 {
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    font-size: 200%;
+
+}
+
+.display-4 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-size: 170%;
+
+}
+
 /*home*/
 .img-fluid {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -50,6 +70,7 @@ a:hover {
 
 
 .carousel-caption-p {
+    font-family: 'Montserrat', sans-serif;
     margin-right: 15px;
 }
 
@@ -98,11 +119,13 @@ a:hover {
 }
 
 .snippet-header {
-    font-size: 180%;
+    font-size: 160%;
+    position: relative;
 }
 
+
 .snippet-body {
-    font-size: 130%;
+    font-size: 110%;
     padding: 0px;
 }
 
@@ -144,7 +167,8 @@ a:hover {
     padding: 0px;
     margin: 0;
     border-top: none;
-    padding: 1em;
+    display: flex;
+
 }
 
 .cards-wrapper {
@@ -154,7 +178,8 @@ a:hover {
 
 .card {
   margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  box-shadow: 2px 6px 8px 0 rgba(13, 110, 47, 0.244);
+  /* box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); */
   border: none;
   border-radius: 0;
   margin: 5px;
@@ -205,9 +230,12 @@ transform: translateY(-50%);
 }
 
 .waste-title {
-  font-size: 200%;
-  /* color: green; */
+  font-size: 130%;
+  color: green;
   padding: 0px;
+  margin-top: 10px;
+
+
 }
 
 .text-only .card-text {
@@ -215,135 +243,8 @@ transform: translateY(-50%);
 }
 /*reduce end*/ 
 
-/*collab*/
 
-#accordion {
-    width: 70%;
-    position: fixed;
-    left: 10%;
-    right: 10%;
-
-}
-
-input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-    font-size: 0.75em;
-    color: #999;
-    top: -5px;
-    -webkit-transition: all 0.225s ease;
-    transition: all 0.225s ease;
-}
-
-.styled-input {
-    float: left;
-    width: 293px;
-    margin: 1rem 0;
-    position: relative;
-    border-radius: 4px;
-}
-
-@media only screen and (max-width: 768px){
-    .styled-input {
-        width:100%;
-    }
-}
-
-.styled-input label {
-    color: black;
-    padding: .8rem 10px .8rem 10px;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    pointer-events: none;
-}
-
-.styled-input.wide { 
-    width: 650px;
-    max-width: 100%;
-}
-
-input,
-textarea {
-    padding: 25px;
-    border: 2px black solid;
-    width: 100%;
-    font-size: 1rem;
-    background-color: white;
-    color: black;
-    border-radius: 4px;
-    
-}
-
-input:focus,
-textarea:focus { outline: 0; }
-
-input:focus ~ span,
-textarea:focus ~ span {
-    width: 100%;
-    -webkit-transition: all 0.075s ease;
-    transition: all 0.075s ease;
-}
-
-textarea {
-    width: 100%;
-    min-height: 5em;
-}
-
-.input-container {
-    width: 650px;
-    max-width: 100%;
-    margin: 20px auto 25px auto;
-}
-
-
-.btn-success {
-    float: right;
-    padding: 7px 35px;
-
-    display: inline-block;
-
-    color: white;
-    font-size: 18px;
-}
-
-.submit-btn:hover {
-    transform: translateY(1px);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-              0 1px 1px 0 rgba(0,0,0,0.09);
-}
-
-@media (max-width: 768px) {
-    .submit-btn {
-        width:100%;
-        float: none;
-        text-align:center;
-    }
-}
-
-input[type=checkbox] + label {
-  color: #ccc;
-  font-style: italic;
-} 
-
-input[type=checkbox]:checked + label {
-  color: #f00;
-  font-style: normal;
-}
-
-.form-header {
-    width:100%;
-    text-align: center;
-    margin-top: 0px;
-
-}
-
-.form-subcaption {
-    width:100%;
-    text-align: center;
-}
-
-/*collab part*/
+/*collab flexbox part*/
 
 .flex-grid {
     display: flex;
@@ -373,21 +274,7 @@ input[type=checkbox]:checked + label {
 
 /* collab end */
 
-.display-3 {
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: 200%;
 
-}
-
-.display-4 {
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 15px;
-    font-size: 170%;
-
-}
 
 .col-8 .display-4 {
     padding-bottom: 5px;
@@ -435,9 +322,6 @@ input[type=checkbox]:checked + label {
       margin-right: 0;
   }
 
-.form-inline {
-    float: right;
-}
 
 .modal-header {
     color: green;
@@ -452,16 +336,24 @@ input[type=checkbox]:checked + label {
     margin: 0;
 }
 
+#submittedModal .modal-body {
+    text-align: center;
+}
+
 /*rescue*/
+.adopt-caption {
+    text-align: center;
+}
 
 .card-container-rescue {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10vmin;
+    /* margin: 10vmin; */
     overflow: hidden;
     transform: skew(3deg);
     margin-top: 0;
+    padding-bottom: 20px;
   }
   
 .card-rescue {
@@ -523,9 +415,23 @@ input[type=checkbox]:checked + label {
     margin: auto;
 }
 
+.form-title-tech {
+    text-align: center;
+}
+
+.col .form-header {
+    margin: 0;
+    padding: 0;
+}
 #myForm .form-group {
     margin: 0;
     margin-bottom: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+#myForm .form-control {
+    text-align: center;
     padding: 0;
 }
 
@@ -538,14 +444,31 @@ input[type=checkbox]:checked + label {
 .btn-group-form {
     margin-top: 5px;
     padding-top: 5px;
+    align-content: right;
+}
+
+.button-group-form {
+    margin-top: 5px;
+    text-align: right;
+    align-content: right;
 }
 
 /*flex quadrants tech*/
 
+.collab-caption {
+    text-align: center;
+}
+
 .flex { 
     display: flex; 
-
 }
+
+.flex-collab {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
 .flex-row { 
     flex-direction: row; 
 
@@ -560,6 +483,12 @@ input[type=checkbox]:checked + label {
 }
 .flex-basis-50 { 
     flex-basis: 50%; 
+}
+.flex-basis-30 { 
+    flex-basis: 30%;
+    margin: 1px;
+    justify-content: center;
+    align-items: center;
 }
 
 .w-100 { 
@@ -589,6 +518,7 @@ input[type=checkbox]:checked + label {
 .flex-text {
     color: white;
     margin: 5px;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
+    font-size: 90%;
 }
